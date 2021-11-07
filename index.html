@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../carricon.png"/>
+    <link rel="apple-touch-icon" href="../carricon.png">
+    <script defer src="ranjack.js" type="module"></script>
+    <link rel="stylesheet" href="ranjack.css"/>
+    <title>Jackbox Chooser</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="rolltainer">
+        <input type="button" id="roll" value="Roll the dice...">
+      </div>
+      <div id="results" class="hidden">
+        <p id="playingtext" class="norm">Looks like we're playing:</p>
+        <p id="name" class="head1"></p>
+        <p id="ppline" class="norm">from Party Pack <span id="partypack"></span></p>
+        <p id="choicecomm" class="norm"></p>
+        <p id="avgline" class="norm">Average rating: <span id="avgscore"></span></p>
+        <p id="scorecomm" class="head2"></p>
+        <div id="imgbox"><img id="scoreimg" src="#" alt="#"></div>
+      </div>
+    </div>
+  </body>
+</html>

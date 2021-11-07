@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("img/bg2.jpg");
+  background-color: #b0292f;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  color: navajowhite;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+div {
+  padding-top: 2vh;
+}
+
+#main {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  max-height: 100vh;
+  padding: 0;
+}
+
+#rolltainer {
+  padding-top: 1vh:
+}
+
+#roll {
+  width: 75%;
+  max-width: 60vh;
+  min-width: fit-content;
+  background: linear-gradient(to right bottom, rgb(205, 0, 0), rgb(217, 29, 0));
+  border-radius: 1vh;
+  border: none;
+  outline: none;
+  font-size: 4vh;
+  font-family: Georgia, serif;
+  color: navajowhite;
+}
+
+#results {
+  display: flex;
+  flex-flow: column;
+  flex: 1 1 auto;
+  transition: opacity 0.3s linear;
+}
+
+p {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.norm {
+
+}
+
+.head1 {
+  font-size: 6vh;
+  font-family: Georgia, serif;
+}
+
+.head2 {
+  font-size: 3vh;
+}
+
+#ppline {
+  padding-bottom: 0;
+}
+
+#avgline {
+  padding-top: 0;
+}
+
+#imgbox {
+  flex: 1 1 auto;
+  object-fit: contain;
+}
+
+#scoreimg {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: cover;
+}
+
+.hidden {
+  opacity: 0;
+}
