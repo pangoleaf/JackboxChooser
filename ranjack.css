@@ -31,7 +31,7 @@ div {
 }
 
 #rolltainer {
-  padding-top: 1vh:
+  padding-top: 1vh;
 }
 
 #roll {
@@ -51,16 +51,12 @@ div {
   display: flex;
   flex-flow: column;
   flex: 1 1 auto;
-  transition: opacity 0.3s linear;
+  transition: opacity 0.2s linear;
 }
 
 p {
   padding-top: 1vh;
   padding-bottom: 1vh;
-}
-
-.norm {
-
 }
 
 .head1 {

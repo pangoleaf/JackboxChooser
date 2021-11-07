@@ -31,16 +31,19 @@ const updateInfo = (elementsObj, newData) => {
   elementsObj.scoreImg.setAttribute('alt', newData.grading.text);
 };
 
-const fadeTransition = (div, elementsObj, newData, func) => {
+const sleep = ms => new Promise(res => setTimeout(res, ms))
+
+const fadeTransition = async (div, elementsObj, newData, func) => {
   div.classList.add('hidden');
-  setTimeout(() => {
-    func(elementsObj, newData);
-    if (elementsObj.scoreImg.complete) {
-      div.classList.remove('hidden')
-    } else {
-      elementsObj.scoreImg.addEventListener('load', div.classList.remove('hidden'))
-    };
-  }, 200);
+  await sleep(200)
+  func(elementsObj, newData);
+  let counter = 0;
+  while (!elementsObj.scoreImg.complete) {
+    await sleep(50);
+    counter++;
+    if (counter >= 20) break;
+  }
+  div.classList.remove('hidden')
 };
 
 const skew = 1;
